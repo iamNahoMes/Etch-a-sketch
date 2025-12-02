@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg">
+    <title>Etch-a-sketch</title>
+    <script src="main.js" defer></script>
+   
+
+</head>
+<body>
+    <h1>Etch-a-sketch</h1>
+    <p class="hint"></p>
+        <form>
+            <input type="radio" name="mode" id="colorPicker" value="color">
+            <input type="color" id="colorVariation" list="theme-sunny" value="#ff0000">
+            <datalist id="theme-sunny">
+                <option value="#9ef6ff"></option>
+                <option value="#ffed63"></option>
+                <option value="#ffcc31"></option>
+                <option value="#ffa32f"></option>
+                <option value="#ff8462"></option>
+            </datalist>
+            <label for="colorPicker">COLOR</label>
+            <input type="radio" name="mode" id="blackColor" value="black">
+            <label for="blackColor">BLACK</label>
+            <input type="radio" name="mode" id="rainbow" value="rainbow">
+            <label for="rainbow">RAINBOW</label>
+            <input type="radio" name="mode" id="eraser" value="eraser">
+            <label for="eraser">ERASER</label>
+            <input type="text" id="inputValue" name="text" placeholder="10" style="width:50px;">
+            <span id="gridSize"></span>
+            <button id="submitBtn" style="font-size: size 14px;">submit</button>
+            <button id="clearBtn" style="font-size:14px;">clear</button>
+        </form>
+        <div class="container"></div>
+</body>
+</html>
